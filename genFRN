@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Author : Jim JMcDonald
+# Author  : Jim JMcDonald
 # GitHub source: https://github.com/Jim-JMCD/Genfrn/tree/main
 # Display usage
 function usage() {
