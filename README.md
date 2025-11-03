@@ -116,4 +116,4 @@ file_15  file_21  file_28  file_34  file_40  file_47  file_8
 $
 $ rm genFRN_log_20251101-105116.sh
 ~~~
-Deep Seek V3 was used to convert the Bash script to Powershell. DeepSeek succeeded with no errors at the first attempt. Microsoft Co-Pilot, ChatGPT and Mistral Le Chat all failed to convert to the script to Powershell, all attempts to rectify all the problems also failed.   
+Deep Seek V3 was used to convert the Bash script to Powershell. DeepSeek succeeded with no errors at the first attempt. Microsoft Co-Pilot, ChatGPT and Mistral Le Chat all failed to convert to the script to Powershell, all thier attempts to rectify all the problems also failed.   
