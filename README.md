@@ -20,8 +20,9 @@ Users can select how many levels of the parent directories that can be added to 
 genFRN <parent level> [input directory]
 ~~~
 * parent level   = only numbers 1 , 2, 3 and 4 permitted, manditory
-* input directory = optional input direcotory.
+* input directory = optional, input directrory names with spaces are required to be enclosed in 'quotes'. 
 * The default directory is the directory from where the script is run ($PWD)
+* File names with spaces will be processed, the spaces will remain in the file names.
 
 ### Notes
 __*All files in the directory are renamed*__. Directories and hidden files are ignored.  Any file name starting with "." is ignored.
