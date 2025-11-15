@@ -49,9 +49,9 @@ Relative pathes as input will be processed.
 
 __*Any changes made to the directory contents after the renaming has completed could interfer with the recovery process*__.
 
-__*Bailing out during processing :*__ 
+__*Bailing out during re-name processing :*__ 
 * BASH       : The excutable log file can be used to undo processing up the point of bail out.
-* POWERSHELL : Recovery from a bail out is manual.  Powershell does not have the functiolaity of the bash *trap* command. 
+* POWERSHELL : Recovery from a bail out after the script has started re-naming files is manual.  Powershell does not have the functiolaity of the bash *trap* command. 
 
 __*Recovery*__
 In the directory that is processed an executable log file is created. To recover run the command:
