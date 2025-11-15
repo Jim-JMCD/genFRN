@@ -88,7 +88,7 @@ Renaming complete.
 
 To UNDO run: ./logs/genFRN_log_20251101-105116.sh
 If you ABORTED while renaming you can still use ./logs/genFRN_log_20251101-105116.sh to undo any changes
-$
+$ #### Script run complete, now check the results
 $cd logs
 $ls
 transfer_wk1_Thu_logs_file_1   transfer_wk1_Thu_logs_file_33
