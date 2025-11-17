@@ -99,7 +99,7 @@ transfer_wk1_Thu_logs_file_10  transfer_wk1_Thu_logs_file_34
 transfer_wk1_Thu_logs_file_11  transfer_wk1_Thu_logs_file_35
 transfer_wk1_Thu_logs_file_12  transfer_wk1_Thu_logs_file_36
 transfer_wk1_Thu_logs_file_13  transfer_wk1_Thu_logs_file_37
-                                                               # Edited, list too long.   
+# Edited, list too long.   
 transfer_wk1_Thu_logs_file_3   transfer_wk1_Thu_logs_file_8
 transfer_wk1_Thu_logs_file_30  transfer_wk1_Thu_logs_file_9
 transfer_wk1_Thu_logs_file_31  genFRN_log_20251101-105116.sh
@@ -119,6 +119,21 @@ file_14  file_20  file_27  file_33  file_4   file_46  file_7
 file_15  file_21  file_28  file_34  file_40  file_47  file_8
 $
 $ rm genFRN_log_20251101-105116.sh
+~~~
+### Re-name without using current directory structure
+~~~
+$ mkdir transfer_2025_day93
+$ mv file_* ./xfer_2025_day93
+$./genFRN 1 ./xfer_2025_day93
+$ mv ./xfer_2025_day93/* .
+$rmdir ./xfer_2025_day93
+ls
+xfer_2025_day93_file_1   xfer_2025_day93_file_16  xfer_2025_day93_file_22
+xfer_2025_day93_file_29  xfer_2025_day93_file_35  xfer_2025_day93_file_41
+xfer_2025_day93_file_48  xfer_2025_day93_file_9   xfer_2025_day93_file_10
+xfer_2025_day93_file_17  xfer_2025_day93_file_23  xfer_2025_day93_file_3
+xfer_2025_day93_file_36  xfer_2025_day93_file_42  xfer_2025_day93_file_49 
+# Edited, list too long. 
 ~~~
 #### Notes
 
