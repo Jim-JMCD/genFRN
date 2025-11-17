@@ -13,6 +13,7 @@ Best used in directories that only contain many files with genric names like:
 * scan_056.pdf 
 
 and given context and meaning by their parent directories.
+ 
 _______________________________
 ### Usage
 Users can select how many levels of the parent directories that can be added to the name. Users can undo changes to naming if required.
@@ -44,6 +45,7 @@ If source paths that are too short the script will use what it can. If source is
 Directories are not permitted as input: root "/" , current directory as "." and parent of current as ".."
 Relative pathes as input will be processed.
 
+If parent direory name(s) not suitable, create a directory with a suitable name, move all the files to that directory and run the script. 
 
 ### HOW TO UNDO the renaming.
 
