@@ -45,7 +45,7 @@ If source paths that are too short the script will use what it can. If source is
 Directories are not permitted as input: root "/" , current directory as "." and parent of current as ".."
 Relative pathes as input will be processed.
 
-If parent direory name(s) not suitable, create a directory with a suitable name, move all the files to that directory and run the script. If required, move the files back to their original location. 
+If parent directory name(s) not suitable, create a directory with a suitable name, move all the files to that directory and run the script. If required, move the files back to their original location. 
 
 ### HOW TO UNDO the renaming.
 
