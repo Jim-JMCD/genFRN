@@ -14,6 +14,7 @@ Best used in directories that only contain many files with genric names like:
 
 and given context and meaning by their parent directories.
  
+If parent directory name(s) are not suitable it is simple to provide an alterantive prefix to the generic file names. 
 _______________________________
 ### Usage
 Users can select how many levels of the parent directories that can be added to the name. Users can undo changes to naming if required.
@@ -45,7 +46,9 @@ If source paths that are too short the script will use what it can. If source is
 Directories are not permitted as input: root "/" , current directory as "." and parent of current as ".."
 Relative pathes as input will be processed.
 
-If parent directory name(s) not suitable, create a directory with a suitable name, move all the files to that directory and run the script. If required, move the files back to their original location. 
+If parent directory name(s) not suitable. _Either:_
+* Temporarily rename the parent directory and run genFRN with Level set 1.   _Or:_
+* Create a directory with a suitable name, move all the files to that directory and run the script with Level set 1. If required, move the files back to their original location. See example below. 
 
 ### HOW TO UNDO the renaming.
 
@@ -108,12 +111,8 @@ $
 ~~~
 ### UNDO
 ~~~
-
-```
-./genFRN_log_20251101-105116.sh                           
-```
-
-$ ls
+$./genFRN_log_20251101-105116.sh       # Run undo log                        
+$ls
 file_1   file_16  file_22  file_29  file_35  file_41  file_48  file_9
 file_10  file_17  file_23  file_3   file_36  file_42  file_49  genFRN_log_20251101-105116.sh
 file_11  file_18  file_24  file_30  file_37  file_43  file_5
@@ -122,16 +121,16 @@ file_13  file_2   file_26  file_32  file_39  file_45  file_6
 file_14  file_20  file_27  file_33  file_4   file_46  file_7
 file_15  file_21  file_28  file_34  file_40  file_47  file_8
 $
-$ rm genFRN_log_20251101-105116.sh
+$rm genFRN_log_20251101-105116.sh
 ~~~
 ### Re-name without using current directory structure
 ~~~
-$ mkdir transfer_2025_day93
-$ mv file_* ./xfer_2025_day93
+$mkdir transfer_2025_day93
+$mv file_* ./xfer_2025_day93
 $./genFRN 1 ./xfer_2025_day93
-$ mv ./xfer_2025_day93/* .
+$mv ./xfer_2025_day93/* .
 $rmdir ./xfer_2025_day93
-ls
+$ls
 xfer_2025_day93_file_1   xfer_2025_day93_file_16  xfer_2025_day93_file_22
 xfer_2025_day93_file_29  xfer_2025_day93_file_35  xfer_2025_day93_file_41
 xfer_2025_day93_file_48  xfer_2025_day93_file_9   xfer_2025_day93_file_10
